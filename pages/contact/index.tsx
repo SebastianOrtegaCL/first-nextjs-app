@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import styles from '../../styles/Home.module.css';
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Contact() {
     return (
@@ -12,10 +15,11 @@ export default function Contact() {
                 </Head>
 
                 <main
-                    className={styles.main}
+                    className={`${styles.main} ${inter.className}`}
                 >   
-                    <h1>Contact</h1>
+                    <h1 className={styles.title}>Contact</h1>
                 </main>
+                
             </div>
         </>
     )
