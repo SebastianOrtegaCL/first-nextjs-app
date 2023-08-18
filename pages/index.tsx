@@ -18,7 +18,7 @@ export default function Home() {
       
       <main className={`${styles.main} ${inter.className}`}>
         <Link href='/about' className = {styles.title}>
-          Go to About
+          Go to About INDEX
         </Link>
 
         
